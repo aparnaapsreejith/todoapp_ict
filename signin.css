@@ -5,12 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Times New Roman', Times, serif;
   }
 
 body {
 	
-	font-family: 'Open Sans', sans-serif;
+	font-family:'Times New Roman', Times, serif
     /* background: url("puli.jpg") no-repeat top center; */
     height: 100vh;
     width: auto;
@@ -25,7 +25,7 @@ body {
     width: 100%;
     border-radius: 20px;
     margin: 50px auto;
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(240, 118, 219, 0.658);
     box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
     -webkit-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
     -moz-box-shadow: 0px 0px 165px 30px rgba(0,0,0,0.85) inset;
@@ -57,9 +57,9 @@ h2 {
     margin-top: 30px;
 	margin-left: 30px;
     color:white;
-    font-style: italic;
-    font-family: 'Open Sans', sans-serif;
-    background: transparent;
+    font-style:normal;
+    font-family:'Times New Roman', Times, serif;
+    background:transparent;
     border: 0;
     border-bottom: 3px solid #f0f0f0;
      
@@ -153,24 +153,7 @@ h2 {
 	  transform: translateY(105%);
 	  font-size: 25px;
 }
-	.eye {
-		float: right;
-		cursor: pointer;
-		
-			
-	}
-	.eye i{
-
-		transform: translateY(-100%);
-		
-	}
-	.form-check.success .eye i{
-		transform: translateY(-100%);
-		
-	}
-	.form-check.error .eye i{
-		transform: translateY(-100%);
-	}
+	
 	#hide2{
 		display: none;
 	}

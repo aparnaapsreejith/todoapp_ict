@@ -10,40 +10,36 @@ const uname = document.getElementById('username');
 const password = document.getElementById('pass');
 
 
+if(uname.value.trim() === '') {
+  valid = false;
+   setErrorFor(uname, 'Username cannot be blank');
+ } else if (uname.value.trim()!= "admin") {
+   setErrorFor(uname, 'Not a valid username');
+   valid = false;
 
-
-// ########################################## Email ###########################################################
-
-
-    if(uname.value.trim() === '') {
-     valid = false;
-      setErrorFor(uname, 'Username cannot be blank');
-    } else if (uname.value.trim()!= "admin") {
-      setErrorFor(uname, 'Not a valid username');
-      valid = false;
-
-    } 
-    else {
-      setSuccessFor(uname," ");
-    }
+ } 
+ else {
+   setSuccessFor(uname," ");
+ }
 
 
 
 // ########################################## Main Pass ###########################################################
 
-    if(password.value.trim() === '') {
-            setErrorFor(password, 'Password cannot be blank');
-            valid = false;
-    }
-     else if(password.value.trim() === "12345"){
-        setSuccessFor(password," ");
-    }
-    else{
-            setErrorFor(password," Password not valid ");
-            valid = false;
-    }
-    
+ if(password.value.trim() === '') {
+         setErrorFor(password, 'Password cannot be blank');
+         valid = false;
+ }
+  else if(password.value.trim() === "12345"){
+     setSuccessFor(password," ");
+ }
+ else{
+         setErrorFor(password," Password not valid ");
+         valid = false;
+ }
+ 
 
+ 
 // #####################################################################################################
 if (v=valid){
   console.log('call delay')
@@ -72,22 +68,3 @@ function setSuccessFor(input,message) {
   small.innerText = message;
     
 }
-
-
-
-    function myfn()
-    {
-    const x = document.getElementById('pass');
-    const y = document.getElementById('hide1');
-    const z = document.getElementById('hide2');
- 
-   if(x.type == "password"){
-     x.type ="text";
-     y.style.display ="block";
-     z.style.display ="none";
-   }else {
-    x.type ="password";
-    y.style.display ="none";
-    z.style.display ="block";
-   }
- }
